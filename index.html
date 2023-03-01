@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ram Comparer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+
+  <script>
+    window.addEventListener('error', function(e){
+      // prevent React's listener from firing
+      e.stopImmediatePropagation();
+      // prevent the browser's console error message 
+      e.preventDefault();
+    });
+</script>
+</html>
